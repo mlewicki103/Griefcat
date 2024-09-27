@@ -1,6 +1,6 @@
 <footer class="Footer" role="contentinfo" data-controller="FooterBreakpoints">
 
-  <div class="Footer-inner clear">
+  <!--<div class="Footer-inner clear">
 
     <squarespace:block-field id="footerBlocksTop" class="Footer-blocks Footer-blocks--top sqs-alternate-block-style-container" columns="12" label="{localizedStrings.footerTopBlocks}" />
 
@@ -41,10 +41,10 @@
 
       </div>
 
-      <!--<squarespace:block-field id="footerBlocksMiddle" class="Footer-blocks Footer-blocks--middle sqs-alternate-block-style-container" columns="12" label="{localizedStrings.footerMiddleBlocks}" />-->
+      <squarespace:block-field id="footerBlocksMiddle" class="Footer-blocks Footer-blocks--middle sqs-alternate-block-style-container" columns="12" label="{localizedStrings.footerMiddleBlocks}" />
 
-      <!--<squarespace:navigation navigationId="footerMainNavigation" template="footer-nav" />-->
-    </div>
+      <squarespace:navigation navigationId="footerMainNavigation" template="footer-nav" />
+    </div>-->
 
     <squarespace:block-field id="footerBlocksBottom" class="Footer-blocks Footer-blocks--bottom sqs-alternate-block-style-container" columns="12" label="{localizedStrings.footerBottomBlocks}" />
 
