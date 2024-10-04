@@ -92,19 +92,19 @@
           <squarespace:navigation navigationId="secondaryNavigation" template="mobile-nav" />
         </nav>
       </div>
-      <ul class="social-list">
-  			<li><a class="btn btn-sq" target="blank_" href="https://www.instagram.com/griefcatpartytime/"><span class="visually-hidden">Instagram</span><img alt="Instagram" width="32" height="32" src="https://images.squarespace-cdn.com/content/5b53679ef79392fc625143fb/dd7341b0-dd14-44a2-a39a-912079d28c84/instagram-light%402x.png?content-type=image%2Fpng"></a></li>
-  			<!-- <li><a class="btn btn-sq" target="blank_" href="TK"><span class="visually-hidden">TikTok</span><img alt="TikTok" width="32" height="32" src="https://images.squarespace-cdn.com/content/5b53679ef79392fc625143fb/154a15a6-4379-4441-8574-1a4e7c118c3f/tiktok-light%402x.png?content-type=image%2Fpng"></a></li> -->
-  			<li><a class="btn btn-sq" target="blank_" href="https://www.facebook.com/griefcatpartytime/"><span class="visually-hidden">Facebook</span><img alt="Facebook" width="32" height="32" src="https://images.squarespace-cdn.com/content/5b53679ef79392fc625143fb/dd32167c-00f4-43ac-87dd-8d3e06f101a6/facebook-light%402x.png?content-type=image%2Fpng"></a></li>
-  			<li><a class="btn btn-sq" target="blank_" href="https://www.youtube.com/channel/UCR52EsOXMQViURRS1JXlz1Q"><span class="visually-hidden">YouTube</span><img alt="YouTube" width="32" height="32" src="https://images.squarespace-cdn.com/content/5b53679ef79392fc625143fb/a9d37181-80d6-4259-a79c-311f2beef3cf/youtube-light%402x.png?content-type=image%2Fpng"></a></li>
-  			<li><a class="btn btn-sq" target="blank_" href="https://open.spotify.com/artist/7e3p0KrFuq1MNdxX8ZJjYO?si=nzYoTDjqQ6C50YphL63ExQ&nd=1&dlsi=99a0ca74d1664650"><span class="visually-hidden">Spotify</span><img alt="Spotify" width="32" height="32" src="https://images.squarespace-cdn.com/content/5b53679ef79392fc625143fb/468a1ff7-37e0-4852-9671-84704ae636b5/spotify-light%402x.png?content-type=image%2Fpng"></a></li>
-  			<li><a class="btn btn-sq" target="blank_" href="https://music.apple.com/us/artist/griefcat/1502074143"><span class="visually-hidden">Apple Music</span><img alt="Apple Music" width="32" height="32" src="https://images.squarespace-cdn.com/content/5b53679ef79392fc625143fb/c1ae1fdd-21e6-4349-8b44-1b9e79948148/applemusic-light%402x.png?content-type=image%2Fpng"></a></li>
-		  </ul>
       <div class="Mobile-overlay-folders" data-content-field="navigation">
         <squarespace:navigation navigationId="mainNavigation" template="mobile-nav-folder" />
         <squarespace:navigation navigationId="secondaryNavigation" template="mobile-nav-folder" />
       </div>
     </div>
+      <ul class="social-list">
+	<li><a class="btn btn-sq" target="blank_" href="https://www.instagram.com/griefcatpartytime/"><span class="visually-hidden">Instagram</span><img alt="Instagram" width="32" height="32" src="https://images.squarespace-cdn.com/content/5b53679ef79392fc625143fb/dd7341b0-dd14-44a2-a39a-912079d28c84/instagram-light%402x.png?content-type=image%2Fpng"></a></li>
+	<!-- <li><a class="btn btn-sq" target="blank_" href="TK"><span class="visually-hidden">TikTok</span><img alt="TikTok" width="32" height="32" src="https://images.squarespace-cdn.com/content/5b53679ef79392fc625143fb/154a15a6-4379-4441-8574-1a4e7c118c3f/tiktok-light%402x.png?content-type=image%2Fpng"></a></li> -->
+	<li><a class="btn btn-sq" target="blank_" href="https://www.facebook.com/griefcatpartytime/"><span class="visually-hidden">Facebook</span><img alt="Facebook" width="32" height="32" src="https://images.squarespace-cdn.com/content/5b53679ef79392fc625143fb/dd32167c-00f4-43ac-87dd-8d3e06f101a6/facebook-light%402x.png?content-type=image%2Fpng"></a></li>
+	<li><a class="btn btn-sq" target="blank_" href="https://www.youtube.com/channel/UCR52EsOXMQViURRS1JXlz1Q"><span class="visually-hidden">YouTube</span><img alt="YouTube" width="32" height="32" src="https://images.squarespace-cdn.com/content/5b53679ef79392fc625143fb/a9d37181-80d6-4259-a79c-311f2beef3cf/youtube-light%402x.png?content-type=image%2Fpng"></a></li>
+	<li><a class="btn btn-sq" target="blank_" href="https://open.spotify.com/artist/7e3p0KrFuq1MNdxX8ZJjYO?si=nzYoTDjqQ6C50YphL63ExQ&nd=1&dlsi=99a0ca74d1664650"><span class="visually-hidden">Spotify</span><img alt="Spotify" width="32" height="32" src="https://images.squarespace-cdn.com/content/5b53679ef79392fc625143fb/468a1ff7-37e0-4852-9671-84704ae636b5/spotify-light%402x.png?content-type=image%2Fpng"></a></li>
+	<li><a class="btn btn-sq" target="blank_" href="https://music.apple.com/us/artist/griefcat/1502074143"><span class="visually-hidden">Apple Music</span><img alt="Apple Music" width="32" height="32" src="https://images.squarespace-cdn.com/content/5b53679ef79392fc625143fb/c1ae1fdd-21e6-4349-8b44-1b9e79948148/applemusic-light%402x.png?content-type=image%2Fpng"></a></li>
+      </ul>
     <button class="Mobile-overlay-close" data-controller="MobileOverlayToggle" aria-label="{localizedStrings.closeNavigation}">
       <svg class="Icon Icon--close" viewBox="0 0 16 16">
         <use xlink:href="/assets/ui-icons.svg#close-icon"></use>
