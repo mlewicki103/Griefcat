@@ -7,6 +7,7 @@
             <a href="{fullUrl}" class="Mobile-overlay-nav-item">
               {navigationTitle}
             </a>
+            <button name="modalContact" class="btn btn-sm btn-outline modal-trigger">Contact</button>
           {.end}
         {.or}
           <button class="Mobile-overlay-nav-item Mobile-overlay-nav-item--folder" data-controller-folder-toggle="{collection.urlId}">
