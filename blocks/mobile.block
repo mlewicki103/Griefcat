@@ -91,6 +91,7 @@
         <nav class="Mobile-overlay-nav Mobile-overlay-nav--secondary" data-content-field="navigation">
           <squarespace:navigation navigationId="secondaryNavigation" template="mobile-nav" />
         </nav>
+	<button name="modalContact" class="btn modal-trigger">Contact</button>
        <ul class="social-list">
 	<li><a class="btn btn-sq" target="blank_" href="https://www.instagram.com/griefcatpartytime/"><span class="visually-hidden">Instagram</span><img alt="Instagram" width="32" height="32" src="https://images.squarespace-cdn.com/content/5b53679ef79392fc625143fb/dd7341b0-dd14-44a2-a39a-912079d28c84/instagram-light%402x.png?content-type=image%2Fpng"></a></li>
 	<li><a class="btn btn-sq" target="blank_" href="https://www.facebook.com/griefcatpartytime/"><span class="visually-hidden">Facebook</span><img alt="Facebook" width="32" height="32" src="https://images.squarespace-cdn.com/content/5b53679ef79392fc625143fb/dd32167c-00f4-43ac-87dd-8d3e06f101a6/facebook-light%402x.png?content-type=image%2Fpng"></a></li>
