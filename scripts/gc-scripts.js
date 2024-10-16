@@ -62,9 +62,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 		}
 
 		// Optionally close the navigation if it is active (for mobile users)
-		if (mainNav.classList.contains('active')) {
-			mainNav.classList.remove('active');
-		}
+		// Broken?
+		// if (mainNav.classList.contains('active')) {
+		// 	mainNav.classList.remove('active');
+		// }
 	});
 });
 
