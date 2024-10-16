@@ -96,10 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 		}
 	});
-});
 
-/* Wiggle Script */
-document.addEventListener("DOMContentLoaded", function() {
 	// Select all elements you want to observe
 	const elementsToObserve = document.querySelectorAll('.tag, .heading-h2, .album-title,  .btn-group-h .btn, #cast li');
 
