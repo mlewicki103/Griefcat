@@ -37,37 +37,37 @@ document.getElementById('modalEnv').addEventListener('click', function(event) {
 
 
 // Smooth scroll to anchor links with a fixed 5rem offset
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-	anchor.addEventListener('click', function(event) {
-		// Prevent default anchor behavior
-		event.preventDefault();
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+// 	anchor.addEventListener('click', function(event) {
+// 		// Prevent default anchor behavior
+// 		event.preventDefault();
 
-		// Get the target element by its ID (removing the '#' from the href)
-		const targetId = this.getAttribute('href').substring(1);
-		const targetElement = document.getElementById(targetId);
+// 		// Get the target element by its ID (removing the '#' from the href)
+// 		const targetId = this.getAttribute('href').substring(1);
+// 		const targetElement = document.getElementById(targetId);
 
-		// Check if the target element exists
-		if (targetElement) {
-			// Set a fixed 5rem offset (80px)
-			const fixedOffset = 5 * 16; // Convert rem to pixels (1rem = 16px)
+// 		// Check if the target element exists
+// 		if (targetElement) {
+// 			// Set a fixed 5rem offset (80px)
+// 			const fixedOffset = 5 * 16; // Convert rem to pixels (1rem = 16px)
 
-			// Get the Y position of the target element and subtract the fixed offset
-			const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - fixedOffset;
+// 			// Get the Y position of the target element and subtract the fixed offset
+// 			const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - fixedOffset;
 
-			// Smooth scroll to the target position
-			window.scrollTo({
-				top: targetPosition,
-				behavior: 'smooth'
-			});
-		}
+// 			// Smooth scroll to the target position
+// 			window.scrollTo({
+// 				top: targetPosition,
+// 				behavior: 'smooth'
+// 			});
+// 		}
 
-		// Optionally close the navigation if it is active (for mobile users)
-		// Broken?
-		// if (mainNav.classList.contains('active')) {
-		// 	mainNav.classList.remove('active');
-		// }
-	});
-});
+// 		// Optionally close the navigation if it is active (for mobile users)
+// 		// Broken?
+// 		// if (mainNav.classList.contains('active')) {
+// 		// 	mainNav.classList.remove('active');
+// 		// }
+// 	});
+// });
 
 /* Video Hero Script */
 document.addEventListener("DOMContentLoaded", function() {
