@@ -1,7 +1,7 @@
 // Function to open the modal
 function openModal(modalId) {
 	// Add 'active' class to modal environment and the specific modal
-	document.getElementById('modalEnv').classList.add('active');
+	document.getElementById('modals').classList.add('active');
 	document.getElementById(modalId).classList.add('active');
 	document.body.classList.remove('is-mobile-overlay-active');
 }
@@ -9,7 +9,7 @@ function openModal(modalId) {
 // Function to close the modal
 function closeModal() {
 	// Remove 'active' class from modal environment and all modals
-	document.getElementById('modalEnv').classList.remove('active');
+	document.getElementById('modals').classList.remove('active');
 	document.querySelectorAll('.modal.active').forEach(function(modal) {
 		modal.classList.remove('active');
 	});
@@ -27,9 +27,9 @@ document.querySelectorAll('.modal .btn-sq').forEach(function(closeButton) {
 	closeButton.addEventListener('click', closeModal);
 });
 
-// Add event listener for clicking on the backdrop (modalEnv)
-document.getElementById('modalEnv').addEventListener('click', function(event) {
-	// Close modal if the clicked element is the backdrop (modalEnv) itself, not the modal
+// Add event listener for clicking on the backdrop (modals)
+document.getElementById('modals').addEventListener('click', function(event) {
+	// Close modal if the clicked element is the backdrop (modals) itself, not the modal
 	if (event.target === this) {
 		closeModal();
 	}
@@ -41,26 +41,26 @@ document.getElementById('modalEnv').addEventListener('click', function(event) {
 // 	anchor.addEventListener('click', function(event) {
 // 		// Prevent default anchor behavior
 // 		event.preventDefault();
-
+// 
 // 		// Get the target element by its ID (removing the '#' from the href)
 // 		const targetId = this.getAttribute('href').substring(1);
 // 		const targetElement = document.getElementById(targetId);
-
+// 
 // 		// Check if the target element exists
 // 		if (targetElement) {
 // 			// Set a fixed 5rem offset (80px)
 // 			const fixedOffset = 5 * 16; // Convert rem to pixels (1rem = 16px)
-
+// 
 // 			// Get the Y position of the target element and subtract the fixed offset
 // 			const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - fixedOffset;
-
+// 
 // 			// Smooth scroll to the target position
 // 			window.scrollTo({
 // 				top: targetPosition,
 // 				behavior: 'smooth'
 // 			});
 // 		}
-
+// 
 // 		// Optionally close the navigation if it is active (for mobile users)
 // 		// Broken?
 // 		// if (mainNav.classList.contains('active')) {
