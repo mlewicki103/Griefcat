@@ -174,7 +174,6 @@
       {@|apply footer.block}
 
     </div>
-    <script src="gc-script.js"/>
     <squarespace:script src="site-bundle.js" combo="false" />
 
     {squarespace-footers}
