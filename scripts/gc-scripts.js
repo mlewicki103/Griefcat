@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
 // Function to open the modal
 function openModal(modalId) {
 	// Add 'active' class to modal environment and the specific modal
@@ -71,6 +70,7 @@ document.getElementById('modals').addEventListener('click', function(event) {
 // });
 
 /* Video Hero Script */
+document.addEventListener("DOMContentLoaded", function() {
 	// Get all elements with the class .sqs-video-overlay
 	var videoOverlays = document.querySelectorAll('.sqs-video-overlay');
 
@@ -116,53 +116,53 @@ document.getElementById('modals').addEventListener('click', function(event) {
 	elementsToObserve.forEach(element => {
 		observer.observe(element);
 	});
-	
-	// Function to modify venue names, locations, and append the year
-	function modifyTourDates() {
-		// Target all venue name elements and trim text after the '@' symbol
-		const venueNames = document.querySelectorAll('.sqs-tourdates__venue-name');
-		venueNames.forEach(function(venue) {
-			const text = venue.textContent;
-			if (text.includes('@')) {
-				venue.textContent = text.split('@')[0].trim();
-			}
-		});
-	
-		// Target all location anchor tags and remove ", United States"
-		const locations = document.querySelectorAll('.sqs-tourdates__location a');
-		locations.forEach(function(location) {
-			const text = location.textContent;
-			if (text.includes(', United States')) {
-				location.textContent = text.replace(', United States', '').trim();
-			}
-		});
-	
-		// Append the year to the date elements
-		const timeframes = document.querySelectorAll('.sqs-tourdates__timeframe');
-		timeframes.forEach(function(timeframe) {
-			const dateTime = timeframe.getAttribute('data-tour-datetime');
-			if (dateTime) {
-				const year = new Date(dateTime).getFullYear(); // Extract the year from the datetime
-				const dateElement = timeframe.querySelector('.sqs-tourdates__date');
-				if (dateElement && !dateElement.textContent.includes(year)) {
-					dateElement.textContent += `, ${year}`; // Append the year to the date
-				}
-			}
-		});
-	}
-		
-	// Set up a MutationObserver to watch for changes in the DOM
-	const observer = new MutationObserver(function(mutations) {
-		mutations.forEach(function(mutation) {
-			if (mutation.addedNodes.length) {
-				modifyTourDates(); // Call the function whenever new nodes are added
-			}
-		});
-	});
-	
-	// Start observing the document's body for any changes
-	observer.observe(document.body, { childList: true, subtree: true });
-	
-	// Call the function once initially to handle already loaded content
-	modifyTourDates();
 });
+
+// Function to modify venue names, locations, and append the year
+function modifyTourDates() {
+	// Target all venue name elements and trim text after the '@' symbol
+	const venueNames = document.querySelectorAll('.sqs-tourdates__venue-name');
+	venueNames.forEach(function(venue) {
+		const text = venue.textContent;
+		if (text.includes('@')) {
+			venue.textContent = text.split('@')[0].trim();
+		}
+	});
+
+	// Target all location anchor tags and remove ", United States"
+	const locations = document.querySelectorAll('.sqs-tourdates__location a');
+	locations.forEach(function(location) {
+		const text = location.textContent;
+		if (text.includes(', United States')) {
+			location.textContent = text.replace(', United States', '').trim();
+		}
+	});
+
+	// Append the year to the date elements
+	const timeframes = document.querySelectorAll('.sqs-tourdates__timeframe');
+	timeframes.forEach(function(timeframe) {
+		const dateTime = timeframe.getAttribute('data-tour-datetime');
+		if (dateTime) {
+			const year = new Date(dateTime).getFullYear(); // Extract the year from the datetime
+			const dateElement = timeframe.querySelector('.sqs-tourdates__date');
+			if (dateElement && !dateElement.textContent.includes(year)) {
+				dateElement.textContent += `, ${year}`; // Append the year to the date
+			}
+		}
+	});
+}
+	
+// Set up a MutationObserver to watch for changes in the DOM
+const observer = new MutationObserver(function(mutations) {
+	mutations.forEach(function(mutation) {
+		if (mutation.addedNodes.length) {
+			modifyTourDates(); // Call the function whenever new nodes are added
+		}
+	});
+});
+
+// Start observing the document's body for any changes
+observer.observe(document.body, { childList: true, subtree: true });
+
+// Call the function once initially to handle already loaded content
+modifyTourDates();
