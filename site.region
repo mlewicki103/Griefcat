@@ -175,9 +175,8 @@
 
     </div>
     <squarespace:script src="site-bundle.js" combo="false" />
-    <squarespace:script src="gc-scripts.js" combo="false" />
 
     {squarespace-footers}
-
+    <squarespace:script src="gc-scripts.js" combo="false" />
   </body>
 </html>
