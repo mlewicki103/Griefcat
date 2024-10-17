@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function() {
 // MODAL HANDELING SCRIPT
 	// Function to open the modal
 	function openModal(modalId) {
@@ -38,7 +39,6 @@
 
 // SQS VIDEO SECTION - LAYOUT ASSIST
 	/* Video Hero Script */
-	document.addEventListener("DOMContentLoaded", function() {
 		// Get all elements with the class .sqs-video-overlay
 		var videoOverlays = document.querySelectorAll('.sqs-video-overlay');
 	
