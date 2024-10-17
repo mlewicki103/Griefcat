@@ -1,3 +1,4 @@
+//MODAL handeling script
 // Function to open the modal
 function openModal(modalId) {
 	// Add 'active' class to modal environment and the specific modal
@@ -35,42 +36,8 @@ document.getElementById('modals').addEventListener('click', function(event) {
 	}
 });
 
-
-// Smooth scroll to anchor links with a fixed 5rem offset
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-// 	anchor.addEventListener('click', function(event) {
-// 		// Prevent default anchor behavior
-// 		event.preventDefault();
-// 
-// 		// Get the target element by its ID (removing the '#' from the href)
-// 		const targetId = this.getAttribute('href').substring(1);
-// 		const targetElement = document.getElementById(targetId);
-// 
-// 		// Check if the target element exists
-// 		if (targetElement) {
-// 			// Set a fixed 5rem offset (80px)
-// 			const fixedOffset = 5 * 16; // Convert rem to pixels (1rem = 16px)
-// 
-// 			// Get the Y position of the target element and subtract the fixed offset
-// 			const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - fixedOffset;
-// 
-// 			// Smooth scroll to the target position
-// 			window.scrollTo({
-// 				top: targetPosition,
-// 				behavior: 'smooth'
-// 			});
-// 		}
-// 
-// 		// Optionally close the navigation if it is active (for mobile users)
-// 		// Broken?
-// 		// if (mainNav.classList.contains('active')) {
-// 		// 	mainNav.classList.remove('active');
-// 		// }
-// 	});
-// });
-
-/* Video Hero Script */
 document.addEventListener("DOMContentLoaded", function() {
+	// SQS VIDEO SECTION - LAYOUT ASSIST
 	// Get all elements with the class .sqs-video-overlay
 	var videoOverlays = document.querySelectorAll('.sqs-video-overlay');
 
@@ -98,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 	});
 
+	// WIGGLE WHEN IN VIEW SCRIPT
 	// Select all elements you want to observe
 	const elementsToObserve = document.querySelectorAll('.tag, .heading-h2, .album-title,  .btn-group-h .btn, #cast li');
 
@@ -118,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
 });
 
+// SQS BANDSINTOWN SECTION - LAYOUT ASSIST
 // Function to modify venue names, locations, and append the year
 function modifyTourDates() {
 	// Target all venue name elements and trim text after the '@' symbol
