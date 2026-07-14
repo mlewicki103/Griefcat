@@ -1,5 +1,5 @@
 //MODAL handeling script
-// Function to open the modal
+// Function to open the modal (test edit 071426)
 function openModal(modalId) {
 	// Add 'active' class to modal environment and the specific modal
 	document.getElementById('modals').classList.add('active');
